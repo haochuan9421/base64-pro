@@ -1,0 +1,50 @@
+{
+  "name": "base64-pro",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsup && tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/index.global.js",
+  "jsdelivr": "dist/index.global.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:haochuan9421/base64-pro.git"
+  },
+  "author": "haochuan9421 <hc199421@gmail.com>",
+  "keywords": [
+    "base64",
+    "encode",
+    "decode",
+    "unicode",
+    "arrayBuffer",
+    "utf-8",
+    "utf-16",
+    "DataURL",
+    "base64-pro"
+  ],
+  "bugs": {
+    "url": "https://github.com/haochuan9421/base64-pro/issues"
+  },
+  "homepage": "https://github.com/haochuan9421/base64-pro",
+  "license": "MIT"
+}
